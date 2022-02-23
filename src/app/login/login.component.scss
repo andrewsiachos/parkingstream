@@ -1,0 +1,11 @@
+#form-container{
+    margin-top: 150px;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.formError{
+    color: red;
+    font-style: italic;
+}

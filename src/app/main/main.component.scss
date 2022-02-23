@@ -1,0 +1,50 @@
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #main{
+        width: 80%;
+        background-color: rgba(253, 234, 194, 0.8);
+        box-shadow: 3px 3px 3px #000;
+
+        h3{
+            margin: 4px;
+            text-decoration: underline;
+        }
+
+        #options{
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                li{
+                    border: 1px solid lightgray;
+                    border-radius: 9px;
+                    cursor: pointer;
+                    width: 20%;
+                    text-align: center;
+                    transition: all 0.4s ease-in-out;
+                    a, a:hover, a:visited{
+                        color: black;
+                        text-decoration: none;
+                        width: 100%;
+                        display: block;
+                        padding:7px;
+                    }
+                    &:hover{
+                        background-color: rgba(245, 216, 154, 0.8);;
+                    }
+                    &:not(:last-child){
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+hr{
+    border-color: black;
+    width: 95%;
+    margin: auto;
+}

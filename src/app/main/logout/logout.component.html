@@ -1,0 +1,10 @@
+<div id="logoutContainer" *ngIf="!logoutAborted">
+    <h4 class="text-center">Are you sure you want to logout?</h4>
+    <div id="logoutButtons" class="text-center">
+        <button class="btn btn-primary" (click)="logout()">Yes</button>
+        <button class="btn btn-danger" (click)="cancelLogout()">No</button>
+    </div>
+
+    
+</div>
+<h5 class="text-center" style="font-style: italic;" *ngIf="logoutAborted">Feel free to check the app.</h5>

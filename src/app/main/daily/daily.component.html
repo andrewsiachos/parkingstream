@@ -1,0 +1,33 @@
+<div id="dailyRevenues">
+    <h3 class="text-center">Daily Revenues in {{revenueCurrency}}</h3>
+    
+
+    <div class="form-group" id="dailyPricesContainer">
+        <label for="dailyprices"></label>
+        <select 
+        name="dailyprices" 
+        id="dailyprices" 
+        class="form-control" 
+        [ngModel]="timeArray[3]" >
+
+            <option *ngFor="let x of timeArray" (click)="renewTable()">{{x}}</option>
+        
+        </select>
+    </div>
+
+    <table>
+        <tr>
+            <th>Hour of Day</th>
+            <th>No of Cars</th>
+            <th>Revenue in {{revenueCurrency}} </th>
+        </tr>
+
+        <tr *ngFor="let x of tableObject">
+            <td> {{x.hour}} </td>
+            <td [ngStyle]="{backgroundColor:columnTwo(x.numberOne), color:ifRed(x.numberOne)}"> {{x.numberOne}}</td>
+            <td [ngStyle]="{opacity:columnThree(x.numberTwo)}"> {{x.numberTwo}} {{revenueCurrency}} </td>
+        </tr>
+
+    </table>
+    
+</div>

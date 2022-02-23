@@ -1,0 +1,14 @@
+#logoutContainer{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgb(104, 100, 100);
+    width: 50%;
+    margin: 25px auto;
+    padding: 10px;
+
+    #logoutButtons{
+        button{
+            margin-right: 15px;
+        }
+    }
+}
